@@ -262,3 +262,15 @@ ls -la ./secure/backups/
 yubi_util_demo % echo "my-test-secret" | ssss-split -t 2 -n 3 -q | ssss-combine -t 2 -q
 > my-test-secret
 ```
+
+```
+"""
+   - Check serial numbers: ykman list --serials   
+   - Reset PIV (if required): ykman --device <SERIAL> piv reset
+   - Change PIN: ykman --device <SERIAL> piv access change-pin
+   - Change PUK: ykman --device <SERIAL> piv access change-puk
+   - Change management-key: ykman --device <SERIAL> piv access change-management-key
+   - Import keyshare: ykman --device <SERIAL> piv objects import 5FC108 ./shamir_shares/key_shares_0X.json
+   - Export keyshare: ykman --device <SERIAL> piv objects export 5FC108 ./export_key_shares/key_shares_0X.json
+"""
+```
