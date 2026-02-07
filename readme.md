@@ -258,7 +258,7 @@ ls -la ./secure/backups/
 ./restore_yubikey.sh
 ```
 
-"""
+```
 yubi_util_demo % echo "my-test-secret" | ssss-split -t 2 -n 3 -q | ssss-combine -t 2 -q
 > my-test-secret
-"""
+```
