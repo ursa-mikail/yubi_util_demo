@@ -273,5 +273,6 @@ yubi_util_demo % echo "my-test-secret" | ssss-split -t 2 -n 3 -q | ssss-combine 
    - Import keyshare: ykman --device <SERIAL> piv objects import 5FC108 ./shamir_shares/key_shares_0X.json
    - Export keyshare: ykman --device <SERIAL> piv objects export 5FC108 ./export_key_shares/key_shares_0X.json
    - ykman piv access ublock-pin # unblock PIN (and reset new PIN) with PUK if PIN tries is blocked.
+   - ykman --device <SERIAL> info # list yubikey details
 """
 ```
